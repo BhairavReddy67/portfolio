@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> 
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            font-family:"Calibri";
+            color: grey;
+        }
+        .image{
+            width: 180px;
+            height: 180px;
+            border-radius: 90px;
+            border: 5px solid rgb(71, 104, 201);
+        }
+        .profile{
+            text-align: center;
+            width: 550px;
+        }
+        .btn-dw{
+            width: 150px;
+            height: 30px;
+            font-size: 20px;
+        }
+        .fa{  
+            padding: 8px;  
+            text-align: center;  
+            margin: 5px 2px;  
+            font-size: 30px;  
+        } 
+        .fa-linkedin {  
+            background: #007bb5;  
+            color: white;  
+        }
+        .fa-github{  
+            color:white;
+            background: black;  
+        }
+        a{
+            text-decoration: none;
+        }
+        .tech{
+            width: 60%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            /* display: flex;
+            flex-direction: row;
+            justify-content: space-around; */
+            justify-content: center;
+            text-align: center;
+
+        }
+        .tech>div{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            /* border: 1px solid black; */
+        }
+        .proffiences,.proffiences1{
+            width: 80%;
+            margin: 20px auto;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: row;
+        }
+        .proffiences>div,.proffiences1>div{
+            width: 16%;
+            /* border: 1px solid black; */
+            margin: auto;
+            text-align: center;
+        }
+        .proffiences1>div{
+            width: 120px;
+            height: 120px;
+            border: 5px solid  rgb(71, 104, 201);
+            border-radius: 50%;
+            text-align: center;
+        }
+        .proffiences1>div>h2{
+            margin-top:40px;
+        }
+        .project_box{
+            width: 80%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 45% 45%;
+            justify-content: center;
+            padding: 20px;
+
+        }
+        .project_box>div{
+            height: 500px;
+            margin: 20px;
+            padding: 5px;
+            box-shadow: 2px 2px 2px 2px grey;
+            text-align: center;
+        }
+        .project_git{
+            border-radius:50% ;
+            color: black;
+            background-color: white;
+            font-size: medium;
+        }
+        @media only screen and (min-device-width : 320px) and (max-device-width:885px){
+            .project_box{
+            width: 80%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 100%;
+            justify-content: center;
+            padding: 20px;
+            }
+            .project_box>div{
+                height: auto;
+                margin: 20px;
+                padding: 5px;
+                box-shadow: 2px 2px 2px 2px grey;
+                text-align: center;
+            }
+            .proffiences,.proffiences1{
+            width: 80%;
+            margin: 20px auto;
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: 45% 45%;
+            justify-content: center;
+            }
+            .proffiences>div,.proffiences1>div{
+            width: 200px;
+            /* border: 1px solid black; */
+            margin: auto;
+            text-align: center;
+            }   
+            .proffiences1>div{
+                width: 120px;
+                height: 120px;
+                border: 5px solid  rgb(71, 104, 201);
+                border-radius: 50%;
+                text-align: center;
+            }
+            .proffiences1>div>h2{
+                margin-top:40px;
+            }
+            .tech{
+                width: 60%;
+                margin: 20px auto;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                /* display: flex;
+                flex-direction: row;
+                justify-content: space-around; */
+                justify-content: center;
+                text-align: center;
+
+            }
+            .tech>div{
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                /* border: 1px solid black; */
+            }
+        }
+        @media only screen and (min-device-width : 320px) and (max-device-width:600px){
+            .proffiences,.proffiences1{
+            width: 80%;
+            margin: 20px auto;
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: 100%;
+            justify-content: center;
+            }
+            .proffiences>div,.proffiences1>div{
+            width: 200px;
+            /* border: 1px solid black; */
+            margin: auto;
+            text-align: center;
+            }
+            .proffiences1{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                justify-content: center;
+
+            }
+            .proffiences1>div{
+                width: 120px;
+                height: 120px;
+                border: 5px solid  rgb(71, 104, 201);
+                border-radius: 50%;
+                text-align: center;
+            }
+            .proffiences1>div>h2{
+                margin-top:40px;
+            }
+            .tech{
+                width: 60%;
+                margin: 20px auto;
+                display: grid;
+                grid-template-columns: 100%;
+                /* display: flex;
+                flex-direction: row;
+                justify-content: space-around; */
+                justify-content: center;
+                text-align: center;
+
+            }
+            .tech>div{
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                /* border: 1px solid black; */
+            }
+            @media only screen and (min-device-width : 10px) and (max-device-width:319px){
+                .proffiences,.proffiences1{
+            width: 80%;
+            margin: 20px auto;
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: 100%;
+            justify-content: center;
+            }
+            .proffiences>div,.proffiences1>div{
+            width: 200px;
+            /* border: 1px solid black; */
+            margin: auto;
+            text-align: center;
+            }
+            .proffiences1{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                justify-content: center;
+
+            }
+            .proffiences1>div{
+                width: 120px;
+                height: 120px;
+                border: 5px solid  rgb(71, 104, 201);
+                border-radius: 50%;
+                text-align: center;
+            }
+            .proffiences1>div>h2{
+                margin-top:40px;
+            }
+            .tech{
+                width: 60%;
+                margin: 20px auto;
+                display: grid;
+                grid-template-columns: 100%;
+                /* display: flex;
+                flex-direction: row;
+                justify-content: space-around; */
+                justify-content: center;
+                text-align: center;
+
+            }
+            .tech>div{
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                /* border: 1px solid black; */
+            }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 560px;margin: 20px auto;">
+        <div class="profile">
+            <img class="image" src="Imgaes\profile_pic.jpeg" alt="Bhairav"/>
+            <h1>Bhairaveswar Reddy</h1>
+            <h3>Full Stack Developer</h3>
+            <pre><b><i class="material-icons" style="font-size: small;">room</i> Bangalore, India     +918341094617     @ tbhairavreddy@gmail.com</b></pre>
+            <a href="https://www.linkedin.com/in/bhairav-reddy/" class="fa fa-linkedin"> </a>
+            <a href="https://github.com/BhairavReddy67" class="fa fa-github"> </a>
+            <p>A skilled Front End Developer, go-getter,
+                nurtured and sculpted by Masai School's training. Actively ready to join in a great lively team
+                in a growth available environment and give my best.</p>
+            <a href="Imgaes\Bhairaveswar_Reddy_Resume_photo.pdf" download><button class="btn-dw">Resume</button></a>
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <h1 style="text-align: center;">Tech Stack</h1>
+    </div>
+        <div class="tech">
+            <div>
+                <i class="fa fa-html5" style="font-size: 100px; background-color: rgb(71, 104, 201); color: white;height: 116px; width: 136px;margin: 5px auto;"></i>
+                <H4>HTML5</H4>
+            </div>
+            <div>
+                <i class="fa fa-css3" style="font-size: 100px; background-color: rgb(71, 104, 201); color: white;height: 116px;width: 136px;margin: 5px auto; "></i>
+                <h4>CSS</h4>
+            </div>
+            <div>
+                <p style="font-size: 100px; background-color: rgb(71, 104, 201); color: white;height: 132px;margin-top:0px ;width: 136px;margin: 5px auto;">Js</p>
+                <h4>JAVASCRIPT</h4>
+            </div>
+            <div>
+                <p style="font-size: 100px; background-color: rgb(71, 104, 201); color: white;height: 132px;margin-top:0px ;width: 136px;margin: 5px auto;">B</p>
+                <h4>BOOTSTRAP</h4>
+            </div>
+            <div>
+                <p style="font-size: 100px; background-color: rgb(71, 104, 201); color: white;height: 132px;margin-top:0px ;width: 136px;margin: 5px auto;">⚛</p>
+                <h4>REACT</h4>
+            </div>
+            <div>
+                <i class="fa fa-database" style="font-size: 100px; background-color: rgb(71, 104, 201); color: white;height: 116px;width: 136px;margin: 5px auto; "></i>
+                <h4>SQL</h4>
+            </div>
+        </div>
+    <hr/>
+    <div style="text-align: center;">
+        <h1>Proficiencies</h1>
+    </div>
+    <div class="proffiences">
+        <div>
+            <p style="font-size: 100px;color: rgb(71, 104, 201);height: 132px;margin-top:0px ;width: 136px;margin: 0px auto;">⚛</p>
+            <h2>React App</h2>
+            <p>When it comes to react apps
+                I have the strength of Atlas</p>
+        </div>
+        <div>
+            <i class="fa fa-database" style="font-size: 100px; color:rgb(71, 104, 201);height: 116px;width: 136px;margin: 5px auto; "></i>
+            <h2>Backend</h2>
+            <p>I am the one who runs
+                the show</p>
+        </div>
+        <div>
+            <i class="fa fa-code" style="font-size: 100px; color:rgb(71, 104, 201) ;height: 116px; width: 136px;margin: 5px auto;"></i>
+            <h2>Frontend</h2>
+            <p>Now just that I can
+                even host the show</p>
+        </div>
+        <div>
+            <i class="material-icons" style="font-size: 100px; color:rgb(71, 104, 201);height: 116px;width: 136px;margin: 5px auto; ">device_hub</i>
+            <h2>Data Structures</h2>
+            <p>Putting the right blocks in the
+                right place is just my thing</p>
+        </div>
+    </div>
+    <hr/>
+    <h1 style="text-align: center;">Projects</h1>
+    <div class="project_box">
+        <div>
+            <img src="Imgaes\todoapplication.png" width=100% height="280px"/>
+            <h2>To-Do Application</h2>
+            <p>It is basically a list of the tasks that you have to do.</p>
+            <a href="https://github.com/BhairavReddy67" class="fa fa-github project_git"><b>Github</b></a>
+            <div>
+                <img src="Imgaes\html.png" height="30px" width="30px"/> 
+                <img src="Imgaes\css.png" height="30px" width="50px"/> 
+                <img src="Imgaes\bootstarp.jpg" height="35px" width="50px"/>
+            </div>
+        </div>
+        <div>
+            <img src="Imgaes\carb _manager.png" width="100%" height="280px"/>
+            <h2>Carb Manager Activity</h2>
+            <p>It is to calculate your daily energy budget and your macros goals</p>
+            <a href="https://github.com/BhairavReddy67" class="fa fa-github project_git"><b>Github</b></a> 
+            <div>
+                <img src="Imgaes\html.png" height="30px" width="30px"/> 
+                <img src="Imgaes\css.png" height="30px" width="50px"/> 
+                <img src="Imgaes\bootstarp.jpg" height="35px" width="50px"/>
+                <img src="Imgaes\js.jpg" height="30px" width="30px"/>
+            </div>
+        </div>
+        <div>
+            <img src="Imgaes\news.png" width="100%" height="280px"/>
+            <h2>Latest News Updated</h2>
+            <p>It is the application which can latest news will be update for every time.</p>
+            <a href="https://github.com/BhairavReddy67" class="fa fa-github project_git"><b>Github</b></a>
+            <div>
+                <img src="Imgaes\react.png" height="35px" width="50px"/>
+                <img src="Imgaes\css.png" height="30px" width="50px"/> 
+                <img src="Imgaes\bootstarp.jpg" height="35px" width="50px"/>
+            </div> 
+        </div>
+        <div>
+            <img src="Imgaes\calculator.png" width="100%" height="280px"/>
+            <h2>Calculator</h2>
+            <p>It is basically  the process or result of adding, subtracting, multiplying, or dividing Careful calculation is required.</p>
+            <a href="https://github.com/BhairavReddy67" class="fa fa-github project_git"><b>Github</b></a>
+            <div>
+                <img src="Imgaes\react.png" height="35px" width="50px"/>
+                <img src="Imgaes\redux.png" height="30px" width="30px"/>
+
+                <img src="Imgaes\css.png" height="30px" width="50px"/> 
+                <img src="Imgaes\bootstarp.jpg" height="35px" width="50px"/>
+            </div>  
+        </div>
+    </div>
+    <hr/>
+    <div class="proffiences1">
+            <div>
+                <h2>1200+ hrs</h2>
+            </div>
+            <div>
+                <h2>280+</h2>
+            </div>
+            <div>
+                <h2>260+</h2>
+            </div>
+            <div>
+                <h2>12+</h2>
+            </div>
+    </div>
+</body>
+</html>
