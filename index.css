@@ -1,0 +1,300 @@
+*{
+    font-family:"Calibri";
+    color: grey;
+}
+.image{
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    border: 5px solid rgb(71, 104, 201);
+}
+.profile{
+    line-height: 10px;
+    width: 560px;
+    margin: 20px auto;
+    text-align: center;
+}
+.btn-dw{
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+}
+.fa{  
+    padding: 8px;  
+    text-align: center;  
+    margin: 5px 2px;  
+    font-size: 30px;  
+} 
+.fa-linkedin {  
+    background: #007bb5;  
+    color: white;  
+}
+.fa-github{  
+    color:white;
+    background: black;  
+}
+a{
+    text-decoration: none;
+}
+.tech{
+    width: 60%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+    justify-content: center;
+    text-align: center;
+
+}
+.tech>div{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    /* border: 1px solid black; */
+}
+.proffiences,.proffiences1{
+    width: 80%;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+}
+.proffiences>div,.proffiences1>div{
+    width: 16%;
+    /* border: 1px solid black; */
+    margin: auto;
+    text-align: center;
+}
+.proffiences1>div{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+.proffiences1>div>div{
+    width: 120px;
+    height: 120px;
+    border: 5px solid  rgb(71, 104, 201);
+    border-radius: 50%;
+    text-align: center;
+}
+.proffiences1>div>div>h2{
+    margin-top:40px;
+}
+.project_box{
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    padding: 20px;
+
+}
+.project_box>div{
+    height: 500px;
+    margin: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px grey;
+    text-align: center;
+}
+.project_git{
+    border-radius:50% ;
+    color: black;
+    background-color: white;
+    font-size: medium;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width:885px){
+    .profile{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    }
+    .project_box{
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    padding: 20px;
+    }
+    .project_box>div{
+        height: auto;
+        margin: 20px;
+        padding: 5px;
+        box-shadow: 2px 2px 2px 2px grey;
+        text-align: center;
+    }
+    .proffiences,.proffiences1{
+    width: 80%;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    }
+    .proffiences>div,.proffiences1>div{
+    width: 200px;
+    /* border: 1px solid black; */
+    margin: auto;
+    text-align: center;
+    }   
+    .proffiences1>div{
+        width: 150px;
+        height: 300px;
+        text-align: center;
+    }
+    .proffiences1>div>div{
+        width: 120px;
+        height: 120px;
+        border: 5px solid  rgb(71, 104, 201);
+        border-radius: 50%;
+        text-align: center;
+    }
+    .proffiences1>div>div>h2{
+        margin-top:40px;
+    }
+    .tech{
+        width: 60%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-around; */
+        justify-content: center;
+        text-align: center;
+
+    }
+    .tech>div{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        /* border: 1px solid black; */
+    }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width:600px){
+    .profile{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    }
+    .proffiences,.proffiences1{
+    width: 80%;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    }
+    .proffiences>div,.proffiences1>div{
+    width: 200px;
+    /* border: 1px solid black; */
+    margin: auto;
+    text-align: center;
+    }
+    .proffiences1{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+
+    }
+    .proffiences1>div{
+        width: 150px;
+        height: 300px;
+        margin: 10px;
+        text-align: center;
+    }
+    .proffiences1>div>div{
+        width: 120px;
+        height: 120px;
+        border: 5px solid  rgb(71, 104, 201);
+        border-radius: 50%;
+        text-align: center;
+    }
+    .proffiences1>div>div>h2{
+        margin-top:40px;
+    }
+    .tech{
+        width: 60%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 100%;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-around; */
+        justify-content: center;
+        text-align: center;
+
+    }
+    .tech>div{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        /* border: 1px solid black; */
+    }
+    @media only screen and (min-device-width : 10px) and (max-device-width:319px){
+    .profile{
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+        .proffiences,.proffiences1{
+    width: 80%;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    }
+    .proffiences>div,.proffiences1>div{
+    width: 200px;
+    /* border: 1px solid black; */
+    margin: auto;
+    text-align: center;
+    }
+    .proffiences1{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+
+    }
+    .proffiences1>div{
+        width: 150px;
+        height: 300px;
+        margin: 10px;
+        text-align: center;
+    }
+    .proffiences1>div>div{
+        width: 120px;
+        height: 120px;
+        border: 5px solid  rgb(71, 104, 201);
+        border-radius: 50%;
+        text-align: center;
+    }
+    .proffiences1>div>div>h2{
+        margin-top:40px;
+    }
+    .tech{
+        width: 60%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 100%;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-around; */
+        justify-content: center;
+        text-align: center;
+
+    }
+    .tech>div{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        /* border: 1px solid black; */
+    }
+    }
+}
+.about{
+    line-height: 20px;
+}
