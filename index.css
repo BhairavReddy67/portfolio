@@ -108,6 +108,7 @@ a{
     .profile{
     width: 80%;
     margin: 20px auto;
+    line-height: 10px;
     text-align: center;
     }
     .project_box{
@@ -175,6 +176,7 @@ a{
 }
 @media only screen and (min-device-width : 320px) and (max-device-width:600px){
     .profile{
+     line-height: 10px;   
     width: 80%;
     margin: 20px auto;
     text-align: center;
@@ -235,6 +237,7 @@ a{
     }
     @media only screen and (min-device-width : 10px) and (max-device-width:319px){
     .profile{
+        line-height: 10px;   
         width: 80%;
         margin: 20px auto;
         text-align: center;
